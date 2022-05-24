@@ -29,7 +29,9 @@ img {
   max-width: 100%; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none; 
+cursor: pointer;
+}
 
 a:hover {
   text-decoration: none; }
@@ -65,6 +67,7 @@ input:focus::-webkit-input-placeholder {
 	width: 1200px;	
 	margin: 0 auto;	
 }
+
 header{
   z-index: 10;
   position: fixed;
@@ -92,6 +95,12 @@ header{
   margin-left: 25px;
   margin-top: 3px;
   float: left;
+}
+
+.music_button{
+  border: none;
+  background: no-repeat;
+  color: ;
 
 }
 
@@ -159,26 +168,25 @@ header{
 
 }
 
-
-
-
-
-/*.............конец хедера .............*/
-
-.hopup{
-	display: none;
-}
-
-
 .some{
   position: absolute;
-  z-index: 6;
   height: 100vh;
   background: #000;
   width: 100%;
   opacity: 0.9;
   height: 100vh;
 
+}
+
+.main_title p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  
+  margin: auto;
+  
+  
+  font-size: 70px;
+  color: #fff;
 }
 
 * {
@@ -214,15 +222,36 @@ input:not(:focus):invalid {
 }
 
 
+@keyframes fadeCircle {
+    0% {
+        width: 2534px;
+        height: 2534px;
+    }
+    25% {
+        width: 2000px;
+        height: 2000px;
+    }
+    50% {
+        width: 1500px;
+        height: 1500px;
+    }
+    75% {
+        width: 1000px;
+        height: 1000px;
+    }
+    100% {
+        width: 534px;
+        height: 534px;
+    }
+}
 .register-form-container {
     position: absolute;
     margin: 0 auto;
-    margin-left: 530px;
+    margin-left: 500px;
     margin-top: 130px;
-    z-index: 7;
+    z-index: 5;
     max-width: 415px;
     width: 100%;
-    background: #424242;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 38px;
@@ -235,7 +264,23 @@ input:not(:focus):invalid {
     animation-fill-mode: forwards;
 
 }
-
+@keyframes fadeForm {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .form-title {
     color: #FFF;
     font-weight: 500;
@@ -268,7 +313,7 @@ a.button {
     text-decoration: none;
 }
 .button-google {
-    color:#C6CFDC;
+    color:#000;
     background: #fff;
 }
 .button-google:hover {
@@ -285,13 +330,13 @@ a.button {
     padding-bottom: 25px;
 }
  input[type="text"] {
-    background: #424242;
+    background: no-repeat;
 }
  input[type="email"] {
-    background: #424242;
+    background: no-repeat;
 }
  input[type="password"] {
-    background: #424242;
+    background: no-repeat;
 }
 
 .sing_up{
@@ -323,170 +368,78 @@ a.button {
 
 
 
-/* ,,,,,,,,,,,,,,,,,конец хопапа,,,,,,,,,,,,,,,,,,,,,*/
 
 
 
 
 
-.item_img img{
-	display: block;
-	width: 100%;
-	z-index: 0;
-	overflow: hidden;
-	height: 100vh;
-
-}
-.shadow{
-	position: absolute;
-	z-index: 1;
-	box-shadow: inset 17em -15em 20em #1C1C1C;
-	height: 100vh;
-	width: 100%;
-}
-
-.info_item{
-	position: absolute;
-	width: 52%;
-	margin-left: 100px;
-	z-index: 4;
-	margin-top: 180px;
-}
-
-.info_item-title{
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	font-size: 80px;
-	line-height: 95%;
-}
-
-.info_item-text{
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	font-size: 30px;
-	margin-top: 40px;
-	line-height: 95%;
-}
-
-.info_buttons{
-	margin-top: 50px;
-}
-
-
-.first{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	width: 170px;
-	height: 47px;
-	border-radius: 50px;
-	border: none;
-	font-size: 15px;
-	background: #DBA901;
-	color:#1C1C1C ;
-}
-
-
-.first:hover{
-	background: #B18904;
-	transition: 0.4s;
-}
-
-.second{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	width: 170px;
-	height: 47px;
-	border-radius: 50px;
-	border: none;
-	font-size: 17px;
-	margin-left: 40px;
-	background: no-repeat;
-	color:#DBA901;
-	border: 3px solid #DBA901;
-}
-
-
-.second:hover{
-	border: 3px solid #B18904;
-	transition: 0.4s;
-}
 
 
 
 
-.content{
-	height: 100vh;
- background:#1C1C1C;
-
-}
 
 
-.player * {
-   display: flex;
-    background: none;
-    border: none;
-    font-size: x-large;
-    width: 200px;
-  	margin: 0 auto;
-  	height: 40px;
-  }
-  .player audio {
-    display: none;
-  }
 
-.play-time{
- 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	color: #888888;
-	margin-left: 50px;
-}
 
-.play-btn{
 
-}
 
-.player{
-	display: inline-block;
-  	margin-top: 20px;
-    background: #424242;
-    width: 300px;
-    padding: 12px;
-    box-shadow: 0px 0px 15px 1px #DBA901;
-  }
 
-.player input[type="range"]
-{
-      -webkit-appearance: none;
-    height: 5px;
-    border-radius: 5px;
-    background: white;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-.player input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #DBA901;
-  cursor: pointer;
-}
 
-.player input[type="range"]::-moz-range-thumb {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #DBA901;
-  cursor: pointer;
-}
-#volume {
-  width: 70px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

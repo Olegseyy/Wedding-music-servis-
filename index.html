@@ -13,18 +13,44 @@
 <body>
 	<header>
 		<div class="header_item">
-			<span class="material-symbols-outlined"> menu </span>
 			<div class="header_item-logo"> Logo </div>
 			<div class="header_item-button">
 				<a href="#"><button class="header_button-fist"> Pricing </button></a>
-				<span class="material-symbols-outlined " id="Sing_in">person </span>
+				<a href="#"><span class="material-symbols-outlined " id="Sing_in">person </span></a>
 				<a href="#"><button class="header_button-second">Sing in</button></a>
 			</div>
 		</div>
-
 	</header>
 
 	<main>
+		<div class="hopup">
+			<div class="some"></div>
+	        <div class="register-form-container">
+	            <form action="">
+	                <h1 class="form-title">
+	                    Sign in
+	                </h1>
+	                <div class="form-fields">
+	                    <div class="form-field">
+	                        <input type="email" placeholder="Email" required>
+	                    </div>
+	                    <div class="form-field">
+	                        <input type="password" placeholder="Password" required minlength="8" maxlength="128">
+	                    </div>
+	                </div>
+	                <div class="form-buttons">
+	                    <button class="button">Sign in</button>
+	       
+	                      <div class="divider">or</div>
+	                    <a href="#" class="button button-google">Google</a>
+	                </div>
+	                <div class="sing_up">
+	                	<p>Don’t have an account?</p>
+	                	<a href="music-page.html">Sign up</a>
+	                </div>
+	            </form>
+	        </div>
+	    </div>
 		<div class="item_img">	
 			<div class="info_item">
 				<div class="info_item-title">Royalty free wedding music and audio tracks from $1
@@ -48,13 +74,14 @@
 					<button class="play-btn">►</button>
 					<div class="play-time">1:00</div>
 					<input id="cur-time" type="range" min="0" max="10" step="0">
-					<div id="speaker"><span class="material-symbols-outlined">
-volume_up
-</span></div>
+					<div ><span  id="speaker" class="material-symbols-outlined">
+					volume_up
+					</span></div>
 					<input id="volume" type="range" min="0" max="10">
 				</div>
 			</div>
 		</section>
+		
 	
 	</main>
 	
