@@ -111,13 +111,13 @@ $(document).ready(function(){
 
 
 
-$('.header_button-second').click(function(e) {
+$('.sing_in').click(function(e) {
     e.preventDefault();
-    $('.hopup').fadeIn(100);
+    $('.popup').fadeIn(100);
     $('html').addClass('no-scroll');
 });
 
-$('.some').click(function() {
-    $('.hopup').fadeOut(100);
+$('.background').click(function() {
+    $('.popup').fadeOut(100);
     $('html').removeClass('no-scroll');
 });

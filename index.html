@@ -12,45 +12,62 @@
 </head>
 <body>
 	<header>
-		<div class="header_item">
-			<div class="header_item-logo"> Logo </div>
-			<div class="header_item-button">
-				<a href="#"><button class="header_button-fist"> Pricing </button></a>
-				<a href="#"><span class="material-symbols-outlined " id="Sing_in">person </span></a>
-				<a href="#"><button class="header_button-second">Sing in</button></a>
+		<div class="container">
+			<div class="header_inner">
+					<a class="item_logo" href="#">Logo</a>
+				<nav class="menu">
+					<ul class="menu_list">
+						<li class="menu_list-item">
+							<a class="menu_list-link" href="music-page.html""> Music</a>
+						</li>
+						<li>
+							<a class="menu_list-link" href="#"> About Us</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="menu_list_second">
+					<a class="pricing_list-item" href="#">Pricing</a>
+					<ul class="sing_in">
+						<li class="menu_list-item">
+							<a class="icon_list-link" href="#"><span class="material-symbols-outlined" id="Sing_in">person </span></a>
+						</li>
+						<li class="menu_list-item">
+							<a class="sing_up-link" href="#">Sing in</a>
+						</li>	
+					</ul>
+				</ul>	
 			</div>
 		</div>
 	</header>
-
 	<main>
-		<div class="hopup">
-			<div class="some"></div>
-	        <div class="register-form-container">
-	            <form action="">
-	                <h1 class="form-title">
-	                    Sign in
-	                </h1>
-	                <div class="form-fields">
-	                    <div class="form-field">
-	                        <input type="email" placeholder="Email" required>
-	                    </div>
-	                    <div class="form-field">
-	                        <input type="password" placeholder="Password" required minlength="8" maxlength="128">
-	                    </div>
-	                </div>
-	                <div class="form-buttons">
-	                    <button class="button">Sign in</button>
-	       
-	                      <div class="divider">or</div>
-	                    <a href="#" class="button button-google">Google</a>
-	                </div>
-	                <div class="sing_up">
-	                	<p>Don’t have an account?</p>
-	                	<a href="music-page.html">Sign up</a>
-	                </div>
-	            </form>
-	        </div>
-	    </div>
+		<div class="popup">
+			<div class="background"></div>
+			<div class="register-form-container">
+				<form action="">
+					<h1 class="form-title">
+						Sign in
+					</h1>
+					<div class="form-fields">
+						<div class="form-field">
+							<input type="email" placeholder="Email" required>
+						</div>
+						<div class="form-field">
+							<input type="password" placeholder="Password" required minlength="8" maxlength="128">
+						</div>
+					</div>
+					<div class="form-buttons">
+						<button class="button">Sign in</button>
+
+						<div class="divider">or</div>
+						<a href="#" class="button button-google">Google</a>
+					</div>
+					<div class="sing_up">
+						<p>Don’t have an account?</p>
+						<a href="sing-up-page.html">Sign up</a>
+					</div>
+				</form>
+			</div>
+		</div>
 		<div class="item_img">	
 			<div class="info_item">
 				<div class="info_item-title">Royalty free wedding music and audio tracks from $1
@@ -69,24 +86,22 @@
 			<div class="container">	
 				<div class="player">
 					<audio id="av-tag" controls><source src="music/epic.mp3" type="audio/mp3">
-					Your browser does not support the audio element.
+						Your browser does not support the audio element.
 					</audio>
 					<button class="play-btn">►</button>
 					<div class="play-time">1:00</div>
 					<input id="cur-time" type="range" min="0" max="10" step="0">
 					<div ><span  id="speaker" class="material-symbols-outlined">
-					volume_up
+						volume_up
 					</span></div>
 					<input id="volume" type="range" min="0" max="10">
 				</div>
 			</div>
 		</section>
-		
-	
 	</main>
 	
 	<footer>
-	
+
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>	
 	<script src="js/main.js"></script>		
