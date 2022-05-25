@@ -61,10 +61,11 @@ input::-webkit-input-placeholder {
 
 input:focus::-webkit-input-placeholder {
   color: #bebebe; }
-.container{
-	width: 1200px;	
-	margin: 0 auto;	
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
+
 header{
   z-index: 10;
   position: fixed;
@@ -75,6 +76,12 @@ header{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+}
+
+.container{
+	max-width: 1200px;	
+	margin: 0 auto;	
+  padding: 0px 15px;
 }
 
 
@@ -96,7 +103,7 @@ header{
 }
 
 .menu {
-  margin-left: 170px; 
+  margin-left: 15%; 
 }
 .menu_list {
   display: flex;
@@ -109,7 +116,7 @@ header{
   display: flex;
   align-items: center;
   width: 250px;
-  margin-left: 60px;
+  margin-left: 10%;
 
 }
 
@@ -197,7 +204,23 @@ header{
 
 
 
+@media (max-width: 812px){  
+  .menu {
+    margin-left: 5%;
+  }
+} 
 
+@media (max-width: 768px){  
+  .menu {
+    margin-left: 5%;
+  }
+  .menu_list {
+    display: none;
+  }
+  .menu_list_second{
+    display: none;
+  }
+} 
 
 /*.............конец хедера .............*/
 
@@ -222,9 +245,7 @@ header{
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: 'Roboto', sans-serif;
-}
+
 input {
     height: 45px;
     width: 100%;
@@ -370,7 +391,7 @@ a.button {
 	width: 100%;
 	z-index: 0;
 	overflow: hidden;
-	height: 100vh;
+	height: 100% ;
 
 }
 .shadow{
@@ -523,6 +544,18 @@ a.button {
 #volume {
   width: 70px;
 }
+
+@media (max-width: 1135px){  
+  .info_item-title{
+    font-size: 70px;
+  }
+} 
+@media (max-width: 1300px){  
+  .item_img img{
+    height: 100%
+
+  }
+} 
 
 
 
