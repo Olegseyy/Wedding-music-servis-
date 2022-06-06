@@ -1,13 +1,15 @@
-$(document).ready(function(){
-    // Плавная прокрутка
-    $('.first').click( function(){ 
-        let scroll_el = $(this).attr('href'); 
-        if ($(content).length != 0) { 
-            $('html, body').animate({ scrollTop: $(content).offset().top }, 1200);
-        }
-        return false; 
-    });
-});
+// $(document).ready(function(){
+//     // Плавная прокрутка
+//     $('.first').click( function(){ 
+//         let scroll_el = $(this).attr('href'); 
+//         if ($(content).length != 0) { 
+//             $('html, body').animate({ scrollTop: $(content).offset().top }, 1200);
+//         }
+//         return false; 
+//     });
+// });
+
+
    
 document.addEventListener("DOMContentLoaded", (e)=> {
 
@@ -83,6 +85,7 @@ document.addEventListener("DOMContentLoaded", (e)=> {
     });
 
 
+
 // $(document).ready(function() {
 //   var panelOne = $('.form-panel.two').height(),
 //     panelTwo = $('.form-panel.two')[0].scrollHeight;
@@ -120,4 +123,21 @@ $('.sing_in').click(function(e) {
 $('.background').click(function() {
     $('.popup').fadeOut(100);
     $('html').removeClass('no-scroll');
+});
+
+var opened = false;
+$(".material-symbols-outlined").click(function(){
+  opened = !opened;
+ 
+
+
+  if(opened) {
+       document.getElementById('dddd').style.width = 100 + "%";
+     
+      
+    } else {
+    document.getElementById('dddd').style.width = 0 + "%";
+
+   
+    }
 });
