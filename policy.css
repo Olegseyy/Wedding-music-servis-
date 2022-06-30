@@ -363,3 +363,154 @@ transition: 0.3s;
 .responsive_menu:after {
   display: none;
 }
+
+
+.popup{
+  display: none;
+}
+
+.background{
+  position: fixed;
+  z-index: 6;
+  height: 100vh;
+  background: #000;
+  width: 100%;
+  opacity: 0.9;
+  height: 100vh;
+  cursor: pointer;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  height: 45px;
+  width: 100%;
+  color: #888888;
+  font-size: 14px;
+  line-height: 16px;
+  border: 2px solid #888888;
+  border-radius: 5px;
+    padding-left: 25px;
+}
+input:focus {
+  outline: none;
+  border: 2px solid ;
+}
+input:valid {
+  border-color: ;
+}
+input:invalid {
+  border-color: orange;
+}
+input:not(:focus):invalid {
+  border-color: #888888;
+}
+.register-form-container {
+  position: fixed;
+  margin: 0 auto;
+  margin-left: 530px;
+  margin-top: 130px;
+  z-index: 7;
+  max-width: 415px;
+  width: 100%;
+  background: #424242;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  animation-name: fadeForm;
+  animation-duration: .7s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.09s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.form-title {
+  color: #FFF;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 38px;
+}
+.form-field {
+  margin-bottom: 13px;
+}
+.button {
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  display:block;
+  height: 45px;
+  background: #DBA901;
+  border-radius: 5px;
+  color:#fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  border: none;
+}
+.button:hover {
+  background-color: #DBA901;
+}
+a.button {
+  text-decoration: none;
+}
+.button-google {
+  color:#C6CFDC;
+  background: #fff;
+}
+.button-google:hover {
+  background: #E2E6F0;
+  color: #888888;
+}
+.divider {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #DBA901;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+input[type="text"] {
+  background: #424242;
+}
+input[type="email"] {
+  background: #424242;
+}
+input[type="password"] {
+  background: #424242;
+}
+
+.sing_up{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.sing_up p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #B6B3B3;
+}
+
+.sing_up a{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.sing_up a:hover{
+  color: #DC1A1A;
+  transition: 0.3s;
+}

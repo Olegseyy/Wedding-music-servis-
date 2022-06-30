@@ -655,32 +655,30 @@ hr{
 .music_track:hover{
   background: #2E2E2E;
   transition: 0.3s;
+  margin-top: 1px;
 }
 
 
 
-.player * {
-   
-  }
 
-  .some{
-   display: flex;
-   align-items: center;
-    
-  }
-  .player audio {
-    display: none;
-  }
+.some{
+ display: flex;
+ align-items: center;
+  
+}
+.player audio {
+  display: none;
+}
 
 .play-time{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #848484;
   margin-left: 10px;
- 
 }
 
 .play-btn{
+  cursor: pointer;
    background: no-repeat;
    border: none;
    font-size: 20px;
@@ -744,7 +742,6 @@ hr{
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: #dfdfdf;
-  text-shadow: 2px 1px 3px#000;
 }
 
 .description_author{
