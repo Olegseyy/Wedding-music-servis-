@@ -10,79 +10,79 @@
 // });
 
 
-   
-document.addEventListener("DOMContentLoaded", (e)=> {
 
-//dom объекты элементов контроля
-          let av = document.getElementById("av-tag");
-          let playTime = document.getElementsByClassName("play-time")[0];
-          let playBtn=document.getElementsByClassName("play-btn")[0];
-          let curTime=document.getElementById("cur-time");
-          let volume = document.getElementById("volume");
-          let speaker=document.getElementById("speaker");
+// document.addEventListener("DOMContentLoaded", (e)=> {
 
-//переменная для отслеживания воспроизведения звука
-          let isPlaying = false;
+// //dom объекты элементов контроля
+// let av = document.getElementById("av-tag");
+// let playTime = document.getElementsByClassName("play-time")[0];
+// let playBtn=document.getElementsByClassName("play-btn")[0];
+// let curTime=document.getElementById("cur-time");
+// let volume = document.getElementById("volume");
+// let speaker=document.getElementById("speaker");
 
-          av.onloadedmetadata = function() {
-            curTime.max=av.duration;
-            };
-            
-//функция вывода текущего времени воспроизведения
-          av.ontimeupdate=function() {
-            
-              let sec_num = av.currentTime;
-              let hours   = Math.floor(sec_num / 3600);
-              let minutes = Math.floor((sec_num - (hours * 3600)) / 60);
-              let seconds = sec_num - (hours * 3600) - (minutes * 60);
-              seconds=Math.round(seconds);
+// //переменная для отслеживания воспроизведения звука
+// let isPlaying = false;
 
-              if (hours < 10) {
-                hours   = "0"+hours;
-              }
-              if (minutes < 10) {
-                minutes = "0"+minutes;
-              }
-              if (seconds < 10) { seconds = "0"+seconds; } playTime.innerHTML = minutes+':'+seconds; 
-              if(isPlaying) curTime.value=av.currentTime; 
-         }; 
-//функция для настройки громкости
-         volume.onchange=function() { 
+// av.onloadedmetadata = function() {
+//   curTime.max=av.duration;
+// };
 
-              av.volume = volume.value/10;
-         }; 
-//функция для установки начала воспроизведения
-         curTime.onchange=function() { 
+// //функция вывода текущего времени воспроизведения
+// av.ontimeupdate=function() {
+  
+//   let sec_num = av.currentTime;
+//   let hours   = Math.floor(sec_num / 3600);
+//   let minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+//   let seconds = sec_num - (hours * 3600) - (minutes * 60);
+//   seconds=Math.round(seconds);
 
-              av.pause(); av.currentTime=curTime.value; av.play(); 
-         }; 
-//функция для вкл/выкл громкости
-         speaker.onclick=function() { 
-         
-          if(volume.value==0) { 
-             volume.value=10; av.volume=1;
-          } else { 
-             volume.value=0; av.volume=0;
-          } }; 
-//функция для play/pause и изображения кнопки воспроизведения
-         playBtn.addEventListener("click", (a)=> {
+//   if (hours < 10) {
+//     hours   = "0"+hours;
+//   }
+//   if (minutes < 10) {
+//     minutes = "0"+minutes;
+//   }
+//   if (seconds < 10) { seconds = "0"+seconds; } playTime.innerHTML = minutes+':'+seconds; 
+//   if(isPlaying) curTime.value=av.currentTime; 
+// }; 
+// //функция для настройки громкости
+// volume.onchange=function() { 
 
-          if(isPlaying)
-          {
-            av.pause();
-            isPlaying=false;
-            playBtn.innerHTML="►";
-          }
-          else
-          {
-            av.play();
-            isPlaying=true;
-            playBtn.innerHTML="❚❚";
-          }
-          
-        });
+//   av.volume = volume.value/10;
+// }; 
+// //функция для установки начала воспроизведения
+// curTime.onchange=function() { 
 
-    });
+//   av.pause(); av.currentTime=curTime.value; av.play(); 
+// }; 
+// //функция для вкл/выкл громкости
+// speaker.onclick=function() { 
+ 
+//   if(volume.value==0) { 
+//    volume.value=10; av.volume=1;
+//  } else { 
+//    volume.value=0; av.volume=0;
+//  } }; 
+// //функция для play/pause и изображения кнопки воспроизведения
+// playBtn.addEventListener("click", (a)=> {
+
+//   if(isPlaying)
+//   {
+//     av.pause();
+//     isPlaying=false;
+//     playBtn.innerHTML="►";
+//   }
+//   else
+//   {
+//     av.play();
+//     isPlaying=true;
+//     playBtn.innerHTML="❚❚";
+//   }
+  
+// });
+
+// });
 
 
 
@@ -114,30 +114,51 @@ document.addEventListener("DOMContentLoaded", (e)=> {
 
 
 
-$('.sing_in').click(function(e) {
-    e.preventDefault();
-    $('.popup').fadeIn(100);
-    $('html').addClass('no-scroll');
+$('.sing_up-link').click(function(e) {
+  e.preventDefault();
+  $('.popup').fadeIn(100);
+  $('html').addClass('no-scroll');
 });
 
 $('.background').click(function() {
-    $('.popup').fadeOut(100);
-    $('html').removeClass('no-scroll');
+  $('.popup').fadeOut(100);
+  $('html').removeClass('no-scroll');
 });
+
+
 
 var opened = false;
-$(".material-symbols-outlined").click(function(){
+$(".lol").click(function(){
   opened = !opened;
- 
-
-
   if(opened) {
-       document.getElementById('dddd').style.width = 100 + "%";
-     
-      
-    } else {
-    document.getElementById('dddd').style.width = 0 + "%";
-
-   
-    }
+   document.getElementById('dddd').style.width = 100 + "%";
+ } else {
+  document.getElementById('dddd').style.width = 0 + "%";
+}
 });
+
+// WaveSurfer.create({
+//   container: document.getElementById("av-tag"),
+//   barWidth: 2,
+//               barHeight: 1, // the height of the wave
+//               barGap: null // the optional spacing between bars of the wave, if not provided will be calculated in legacy format
+//             });
+
+// var av = WaveSurfer.create({
+//   container: document.getElementById("av-tag"),
+//   splitChannels: true,
+//   splitChannelsOptions: {
+//     overlay: false,
+//     channelColors: {
+//       0: {
+//         progressColor: 'white',
+//         waveColor: 'yellow'
+//       },
+//       1: {
+//         progressColor: 'grey',
+//         waveColor: 'orange'
+//       }
+//     }
+//   }
+
+// });

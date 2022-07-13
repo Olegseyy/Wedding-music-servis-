@@ -1,3 +1,29 @@
+@font-face{
+  font-family: Gotham Bold;
+  src: url('fonts/GothamBold.ttf');
+}
+
+@font-face{
+  font-family: Gotham Book;
+  src: url('fonts/GothamBook.ttf');
+}
+
+@font-face{
+  font-family: Gotham Book italic;
+  src: url('fonts/GothamBookItalic.ttf');
+}
+
+@font-face{
+  font-family: Gotham light;
+  src: url('fonts/Gothamlight.ttf');
+}
+
+@font-face{
+  font-family: Gotham Medium;
+  src: url('fonts/GothamMedium.ttf');
+}
+
+
 html {
   -webkit-text-size-adjust: none;
   /* Prevent font scaling in landscape */ }
@@ -64,18 +90,17 @@ input:focus::-webkit-input-placeholder {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #151515;
 }
 
-header{
+main{
+ background: #ede7ba;
+}
+
+
+.header{
   z-index: 10;
-  position: fixed;
   width: 100%;
-  background: #1C1C1C;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  box-shadow: 0px 0.1px 7px 0px #000;
+  background: #fff;
 
 }
 
@@ -93,9 +118,9 @@ header{
 }
 
 .item_logo{
-  font-family: 'Roboto', sans-serif;
+font-family: Gotham Bold;
   font-weight: 300;
-  color: #fff;
+  color: #000;
   font-size: 17px;
 }
 
@@ -120,16 +145,15 @@ header{
 .menu_list_second{
   display: flex;
   align-items: center;
-  width: 250px;
+  width: 259px;
   margin-left: 10%;
 
 }
 
 .menu_list-link {
-  text-shadow: 2px 2px 8px#000;
-  color: #fff;
+  color: #000;
   font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Gotham Medium;
   font-weight: 500;
   cursor: pointer;
   margin-left: 50px;
@@ -160,7 +184,7 @@ header{
   display: none;
   transition: 0.3s;
   position: absolute;
-  background-color: #1C1C1C;
+  background-color: #fff;
   text-align: center;
   margin-left: 12px;
   padding: 15px 10px 10px 10px;
@@ -171,10 +195,10 @@ header{
 }
 
 .ul a{
-  color: #E6E6E6;
+  color: #000;
   transition: 0.3s;
   font-size: 13px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Gotham light;
   font-weight: 200;
 }
 
@@ -197,16 +221,16 @@ header{
 }
 
 .pricing_list-item{
-  font-family: 'Roboto', sans-serif;
+font-family: Gotham Light;
   font-weight: 700;
-  padding: 5px 35px ;
+  padding: 7px 35px ;
   border-radius: 50px;
   border: none;
   margin: auto;
   font-size: 16px;
-  background: #DBA901;
+  background: #b1a55b;
   text-align: center;
-  color:#424242;
+  color:#fff;
   border:none;
   cursor: pointer;
   margin-left: 30px;
@@ -246,8 +270,8 @@ transition: 0.3s;
 }
 
 .sing_up-link{
-  width: 50px;
-  font-family: 'Roboto', sans-serif;
+  width: 100px;
+  font-family: Gotham light;
   font-weight: 300;
   background: no-repeat;
   color: #D8D8D8;
@@ -296,7 +320,7 @@ transition: 0.3s;
   #menu_ico{
     display: block;
     font-size:26px;
-    color: #fff;
+    color: #000;
     margin-left:80%;
     font-variation-settings:
     'FILL' 0,
@@ -305,16 +329,9 @@ transition: 0.3s;
     'opsz' 48
 
   }
-  .responsive_menu{
-    display: block;
-    z-index: 9;
-    width: 100%;
-    position: absolute;
-    background: #000;
-    height: 100vh
-  }
+  
   .responsive_menu_list{
-    margin-top: 12%;
+    margin-top: 11%;
   }
 
   .responsive_menu_sing a{
@@ -333,7 +350,9 @@ transition: 0.3s;
   }
 
   .responsive_menu_item a{
-    color: #848484;
+      font-family: Gotham light;
+
+    color: #000;
     font-size: 20px;
   }
   .header_inner{
@@ -348,7 +367,7 @@ transition: 0.3s;
 
 
 .responsive_menu {
-  z-index: 20;
+  z-index: 8;
   position: absolute;
   width: 0%;
   right: 0px;
@@ -357,7 +376,7 @@ transition: 0.3s;
   overflow: hidden;
   transition: 0.2s;
   height: 400px;
-  margin-top: 50px; 
+  opacity: 0.8;
 }
 
 .responsive_menu:after {
@@ -370,7 +389,7 @@ transition: 0.3s;
 
 .background{
   position: fixed;
-  z-index: 6;
+  z-index: 8;
   height: 100vh;
   background: #000;
   width: 100%;
@@ -379,6 +398,9 @@ transition: 0.3s;
   cursor: pointer;
 
 }
+
+
+
 
 * {
     margin: 0;
@@ -414,9 +436,9 @@ input:not(:focus):invalid {
 .register-form-container {
     position: fixed;
     margin: 0 auto;
-    margin-left: 530px;
+    margin-left: 35%;
     margin-top: 130px;
-    z-index: 7;
+    z-index: 9;
     max-width: 415px;
     width: 100%;
     background: #1C1C1C;
@@ -431,6 +453,25 @@ input:not(:focus):invalid {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
+}
+
+@media (max-width: 1024px){
+  .register-form-container{
+    margin-left: 29%;
+  }
+}
+
+@media (max-width: 768px){
+  .register-form-container{
+    margin-left: 23%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 710px){
+  .register-form-container{
+    margin-left: 7%;
+    width: 354px;
+  }
 }
 
 .form-title {
@@ -519,8 +560,12 @@ a.button {
 
 
 
+/*.........................................*/
+
+
+
 .music_section{
-  height: 200vh;
+  height: 100%;
   display:inline-block;
   margin-top: 100px;
   padding: 0px 20px;
@@ -529,33 +574,30 @@ a.button {
 .music_tilte{
   color: #fff;
   font-size: 43px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Gotham Medium;
   font-weight: bold;
   text-align: center;
-  text-shadow: 2px 1px 3px#000;
 }
 
 .top_music{
-  height: 320px;
-  background: #1C1C1C;
+  background: #ebe3ab;
   margin-top: 90px;
-  padding: 10px 10px;
+  padding: 10px 0px 39px 0px;
 }
 
 .top__tracks_item{
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
+      display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .top_music_description p{
-  text-shadow: 2px 1px 3px#000;
   font-size: 30px;
   text-align: center;
-  color: #9a9a9a;
-  font-family: 'Roboto', sans-serif;
+  color: #fff;
+    font-family: Gotham Light;
   font-weight: 500;
 }
 
@@ -572,14 +614,6 @@ a.button {
 
 @media (max-width: 768px){
 
-  .top_music{
-    height: 132vh; 
-    padding: 10px 10px; 
-  }
-  .top__tracks_item{
-    display: block;
-    margin-left: 25%;
-  }
   .top_music_description{
     text-align: center;
   }
@@ -593,10 +627,6 @@ a.button {
   .top_music_description{
     margin-top: 30px;
   }
-  .top_music{
-    height: 100vh; 
-    padding: 10px 10px; 
-  }
  
   .top_music_description{
     text-align: center;
@@ -607,24 +637,23 @@ a.button {
 }
 
 @media (max-width: 1024px){
-  .top_music{
-    height: 330px;
-  }
+ 
 }
 
 hr{
-  border: 1px solid #848484;
+  border: 1px solid #fff;
   height: 1px;
-  background: #888888;
+  background: #fff;
   opacity: 0.2;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
 .hr_some{
-  margin-top: 45px;
+  background: #b1a55b;
+  margin-top: 55px;
   min-width: 100%;
-  height: 1px;
+  height: 5px;
 }
 
 
@@ -645,15 +674,14 @@ hr{
   outline: hidden;
   width: 340px;
   height: 200px;
-  background: #424242;
+  background: #fff;
   margin:65px 0px 0px 10px;
-  box-shadow: 13px 9px 10px 0px #000;
-  padding: 10px;
+    padding: 10px;
   transition: 0.3s;
 
 }
 .music_track:hover{
-  background: #2E2E2E;
+  background: #ebebeb;
   transition: 0.3s;
   margin-top: 1px;
 }
@@ -684,7 +712,7 @@ hr{
    font-size: 20px;
    padding: 5px 7px;
    border-radius: 0px;
-   background: #DBA901;
+   background: #fff;
    color: #000;
    text-align: center;
 }
@@ -739,17 +767,17 @@ hr{
 
 .description_name p{
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Gotham Bold;
   font-weight: 500;
-  color: #dfdfdf;
+  color: #383838;
 }
 
 .description_author{
-  font-family: 'Lato', sans-serif;
+font-family: Gotham light;
   font-weight: 700;
   font-size: 13px;
   margin-top: 5px;
-  color: #848484;
+  color: #ede7ba;
 }
 
 .description_price-item{
@@ -767,37 +795,32 @@ hr{
 }
 
 .tepm_bpm{
-  font-family: 'Roboto', sans-serif;
+  font-family: Gotham Book;
   font-weight: 400;
+  color:#ede7ba;
 }
 
 .temp_number{
-  font-family: 'Roboto', sans-serif;
+  font-family: Gotham light;
+  
   font-weight: bold;
   margin-left: 5px;
-  color: #848484;
+  color: #b1a55b;
 }
 
 .prise{
+  font-family: Gotham light;
   font-size: 30px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color: #151515;
+  color: #b1a55b;
 
 }
 
-.new_item span{
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  color: #DBA901;
-  text-shadow: 2px 1px 10px #000;
-}
+
 
 .icon .material-symbols-outlined {
   cursor: pointer;
-  color: #DBA901;
-  border: 2px solid #DBA901;
+  color: #c2c2c2;
   padding: 5px;
   font-size: 22px;
   font-variation-settings:

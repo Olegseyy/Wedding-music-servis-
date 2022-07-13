@@ -1,3 +1,29 @@
+@font-face{
+  font-family: Gotham Bold;
+  src: url('fonts/GothamBold.ttf');
+}
+
+@font-face{
+  font-family: Gotham Book;
+  src: url('fonts/GothamBook.ttf');
+}
+
+@font-face{
+  font-family: Gotham Book italic;
+  src: url('fonts/GothamBookItalic.ttf');
+}
+
+@font-face{
+  font-family: Gotham light;
+  src: url('fonts/Gothamlight.ttf');
+}
+
+@font-face{
+  font-family: Gotham Medium;
+  src: url('fonts/GothamMedium.ttf');
+}
+
+
 html {
   -webkit-text-size-adjust: none;
   /* Prevent font scaling in landscape */ }
@@ -64,18 +90,17 @@ input:focus::-webkit-input-placeholder {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #151515;
 }
 
-header{
+main{
+ background: #ede7ba;
+}
+
+
+.header{
   z-index: 10;
-  position: fixed;
   width: 100%;
-  background: #1C1C1C;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  box-shadow: 0px 0.1px 7px 0px #000;
+  background: #fff;
 
 }
 
@@ -93,9 +118,9 @@ header{
 }
 
 .item_logo{
-  font-family: 'Roboto', sans-serif;
+font-family: Gotham Bold;
   font-weight: 300;
-  color: #fff;
+  color: #000;
   font-size: 17px;
 }
 
@@ -120,16 +145,15 @@ header{
 .menu_list_second{
   display: flex;
   align-items: center;
-  width: 250px;
+  width: 259px;
   margin-left: 10%;
 
 }
 
 .menu_list-link {
-  text-shadow: 2px 2px 8px#000;
-  color: #fff;
+  color: #000;
   font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Gotham Medium;
   font-weight: 500;
   cursor: pointer;
   margin-left: 50px;
@@ -157,10 +181,11 @@ header{
 }
 
 .ul{
+  z-index: 10;
   display: none;
   transition: 0.3s;
   position: absolute;
-  background-color: #1C1C1C;
+  background-color: #fff;
   text-align: center;
   margin-left: 12px;
   padding: 15px 10px 10px 10px;
@@ -171,10 +196,10 @@ header{
 }
 
 .ul a{
-  color: #E6E6E6;
+  color: #000;
   transition: 0.3s;
   font-size: 13px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Gotham light;
   font-weight: 200;
 }
 
@@ -184,7 +209,6 @@ header{
   border-bottom: 2px solid red;
 
  }
-
 .menu li:hover > .ul{
   display: block;
   transition: 0.3s;
@@ -197,16 +221,16 @@ header{
 }
 
 .pricing_list-item{
-  font-family: 'Roboto', sans-serif;
+font-family: Gotham Light;
   font-weight: 700;
-  padding: 5px 35px ;
+  padding: 7px 35px ;
   border-radius: 50px;
   border: none;
   margin: auto;
   font-size: 16px;
-  background: #DBA901;
+  background: #b1a55b;
   text-align: center;
-  color:#424242;
+  color:#fff;
   border:none;
   cursor: pointer;
   margin-left: 30px;
@@ -246,8 +270,8 @@ transition: 0.3s;
 }
 
 .sing_up-link{
-  width: 50px;
-  font-family: 'Roboto', sans-serif;
+  width: 100px;
+  font-family: Gotham light;
   font-weight: 300;
   background: no-repeat;
   color: #D8D8D8;
@@ -296,7 +320,7 @@ transition: 0.3s;
   #menu_ico{
     display: block;
     font-size:26px;
-    color: #fff;
+    color: #000;
     margin-left:80%;
     font-variation-settings:
     'FILL' 0,
@@ -305,16 +329,9 @@ transition: 0.3s;
     'opsz' 48
 
   }
-  .responsive_menu{
-    display: block;
-    z-index: 9;
-    width: 100%;
-    position: absolute;
-    background: #000;
-    height: 100vh
-  }
+  
   .responsive_menu_list{
-    margin-top: 12%;
+    margin-top: 11%;
   }
 
   .responsive_menu_sing a{
@@ -333,7 +350,9 @@ transition: 0.3s;
   }
 
   .responsive_menu_item a{
-    color: #848484;
+      font-family: Gotham light;
+
+    color: #000;
     font-size: 20px;
   }
   .header_inner{
@@ -348,7 +367,7 @@ transition: 0.3s;
 
 
 .responsive_menu {
-  z-index: 20;
+  z-index: 8;
   position: absolute;
   width: 0%;
   right: 0px;
@@ -357,12 +376,15 @@ transition: 0.3s;
   overflow: hidden;
   transition: 0.2s;
   height: 400px;
-  margin-top: 50px; 
+  opacity: 0.8;
 }
 
 .responsive_menu:after {
   display: none;
 }
+
+
+
 
 
 .popup{
@@ -514,3 +536,6 @@ input[type="password"] {
   color: #DC1A1A;
   transition: 0.3s;
 }
+
+
+

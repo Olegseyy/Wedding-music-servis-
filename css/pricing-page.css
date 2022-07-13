@@ -1,26 +1,26 @@
 @font-face{
   font-family: Gotham Bold;
-  src: url('fonts/GothamBold.ttf');
+  src: url('../fonts/GothamBold.ttf');
 }
 
 @font-face{
   font-family: Gotham Book;
-  src: url('fonts/GothamBook.ttf');
+  src: url('../fonts/GothamBook.ttf');
 }
 
 @font-face{
   font-family: Gotham Book italic;
-  src: url('fonts/GothamBookItalic.ttf');
+  src: url('../fonts/GothamBookItalic.ttf');
 }
 
 @font-face{
   font-family: Gotham light;
-  src: url('fonts/Gothamlight.ttf');
+  src: url('../fonts/Gothamlight.ttf');
 }
 
 @font-face{
   font-family: Gotham Medium;
-  src: url('fonts/GothamMedium.ttf');
+  src: url('../fonts/GothamMedium.ttf');
 }
 
 
@@ -89,12 +89,11 @@ input:focus::-webkit-input-placeholder {
   color: #bebebe; }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+   background: linear-gradient(#ede7ba, #fff);
+   
 }
 
-main{
- background: #ede7ba;
-}
 
 
 .header{
@@ -163,9 +162,9 @@ font-family: Gotham Bold;
 
 
 .menu_list-link:hover{
-  color: #DBA901;
+  color: #b1a55b;
   transition: 0.3s;
-  border-top: 4px solid red;
+  border-top: 4px solid #b1a55b;
 }
 
 .arrow {
@@ -175,7 +174,7 @@ font-family: Gotham Bold;
   position: absolute;
   top: 25px;
   margin-left: 4px;
-  border-top: 6px solid #fff;
+  border-top: 6px solid #000;
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
 }
@@ -204,9 +203,9 @@ font-family: Gotham Bold;
 }
 
 .ul a:hover{
-  color: #DBA901;
+  color: #b1a55b;
   transition: 0.2s;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #b1a55b;
 
  }
 .menu li:hover > .ul{
@@ -238,7 +237,7 @@ transition: 0.3s;
 }
 
 .pricing_list-item:hover{
-  background: red;
+  background: #b1a55b;
   transition: 0.3s;
   color: #fff;
   padding: 7px 37px ;
@@ -352,7 +351,7 @@ transition: 0.3s;
   .responsive_menu_item a{
       font-family: Gotham light;
 
-    color: #000;
+    color: #fff;
     font-size: 20px;
   }
   .header_inner{
@@ -375,7 +374,7 @@ transition: 0.3s;
   background: #000;
   overflow: hidden;
   transition: 0.2s;
-  height: 400px;
+  height: 100vh;
   opacity: 0.8;
 }
 
@@ -393,36 +392,20 @@ transition: 0.3s;
 
 
 
-/*..............конец хедера..........*/
-
-
-.img_music_page{
-  width: 100%;
-  position: absolute;
-  height: 100vh;
-  object-fit: cover;
-
+.popup{
+  display: none;
 }
 
-.some{
-  position: absolute;
+.background{
+  position: fixed;
+  z-index: 8;
   height: 100vh;
-  background: #ede7ba;
+  background: #fff;
   width: 100%;
   opacity: 0.9;
   height: 100vh;
+  cursor: pointer;
 
-}
-
-.main_title p{
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  
-  margin: auto;
-  
-  
-  font-size: 70px;
-  color: #fff;
 }
 
 * {
@@ -430,13 +413,14 @@ transition: 0.3s;
     padding: 0;
     box-sizing: border-box;
 }
+
 input {
     height: 45px;
     width: 100%;
-    color: #000;
+    color: #888888;
     font-size: 14px;
     line-height: 16px;
-    border: 2px solid #fff;
+    border: 2px solid #888888;
     border-radius: 5px;
     padding-left: 25px;
 }
@@ -451,38 +435,19 @@ input:invalid {
     border-color: orange;
 }
 input:not(:focus):invalid {
-    border-color: #fff;
-    color: #000;
+    border-color: #888888;
 }
 
 
-@keyframes fadeCircle {
-    0% {
-        width: 2534px;
-        height: 2534px;
-    }
-    25% {
-        width: 2000px;
-        height: 2000px;
-    }
-    50% {
-        width: 1500px;
-        height: 1500px;
-    }
-    75% {
-        width: 1000px;
-        height: 1000px;
-    }
-    100% {
-        width: 534px;
-        height: 534px;
-    }
-}
 .register-form-container {
+    position: fixed;
     margin: 0 auto;
-    z-index: 5;
+    margin-left: 35%;
+    margin-top: 130px;
+    z-index: 9;
     max-width: 415px;
     width: 100%;
+    background: #1C1C1C;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 38px;
@@ -495,45 +460,43 @@ input:not(:focus):invalid {
     animation-fill-mode: forwards;
 
 }
-@keyframes fadeForm {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: .25;
-    }
-    50% {
-        opacity: .5;
-    }
-    75% {
-        opacity: .75;
-    }
-    100% {
-        opacity: 1;
-    }
+
+@media (max-width: 1024px){
+  .register-form-container{
+    margin-left: 29%;
+  }
 }
 
-.form-field {
+@media (max-width: 768px){
+  .register-form-container{
+    margin-left: 23%;
+  }
+}
 
+@media (min-width: 425px) and (max-width: 710px){
+  .register-form-container{
+    margin-left: 7%;
+    width: 354px;
+  }
+}
+
+.form-title {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 38px;
+}
+.form-field {
     margin-bottom: 13px;
 }
-
-.form-title{
-  margin-top: 60px;
-  margin-bottom: 30px;   
-    font-family: Gotham Bold;
-  font-size: 35px;
-  text-align: center;
-  color: #fff;
-}
 .button {
-      font-family: Gotham Light;
     width: 100%;
     font-weight: bold;
     font-size: 14px;
     display:block;
     height: 45px;
-    background: #b1a55b;
+    background: #DBA901;
     border-radius: 5px;
     color:#fff;
     text-transform: uppercase;
@@ -549,16 +512,14 @@ a.button {
     text-decoration: none;
 }
 .button-google {
-  font-family: Gotham Light;
-    color:#000;
+    color:#C6CFDC;
     background: #fff;
 }
 .button-google:hover {
     background: #E2E6F0;
-    color: #000;
+    color: #888888;
 }
 .divider {
-  font-family: Gotham Light;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -568,17 +529,13 @@ a.button {
     padding-bottom: 25px;
 }
  input[type="text"] {
-    background: no-repeat;
-    font-family: Gotham Light;
-    color: #000;
+    background: #424242;
 }
  input[type="email"] {
-    background: no-repeat;
-    font-family: Gotham Light;
+    background: #424242;
 }
  input[type="password"] {
-    background: no-repeat;
-    font-family: Gotham Light;
+    background: #424242;
 }
 
 .sing_up{
@@ -613,75 +570,95 @@ a.button {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.prise__items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 35px;
+  margin-top: 120px;
+}
+
+.prise__items-first{
+  margin-bottom: 50px;
+  padding: 20px 0px 0px 0px;
+  width: 310px;
+  border-radius: 30px;
+  height: 400px;
+  background: linear-gradient(#fff, #ede7ba);
+  text-align: center;
+}
+
+.prise__items-second{
+  margin-bottom: 50px;
+   padding: 20px 0px 0px 0px;
+  width: 310px;
+  border-radius: 30px;
+  height: 400px;
+  background: linear-gradient(#fff, #ede7ba);
+  text-align: center;
+}
+
+.prise__items-third{
+ padding: 20px 0px 0px 0px;
+  width: 310px;
+  border-radius: 30px;
+  height: 400px;
+  background: linear-gradient(#fff, #ede7ba);
+  text-align: center;
+}
+
+.title {
+  color: #dccb5b;
+  margin-top: 10px;
+  font-family: Gotham Bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.sub__title {
+  font-family: Gotham Book;
+  font-size: 15px;
+  color: #7f7f7f;
+  margin-bottom: 40px;
+}
+
+.prise__subscription {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.currency {
+  font-family: Gotham Book;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.prise{
+  font-family: Gotham Bold;
+  font-size: 60px;
+}
+
+ .interval {
+  font-size:  18px;
+  margin-top: 40px;
+  font-family: Gotham light;
+  color: #7f7f7f;
+}
+
+.select__btn{
+  width: 210px;
+  height: 60px;
+  background:#dccb5b;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: Gotham light;
+  margin-top: 80px;
+}
+
+#lol{
+  font-size: 60px;
+  color: #8d8d8d;
+}

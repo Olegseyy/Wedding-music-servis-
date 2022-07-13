@@ -1,26 +1,26 @@
 @font-face{
   font-family: Gotham Bold;
-  src: url('fonts/GothamBold.ttf');
+  src: url('../fonts/GothamBold.ttf');
 }
 
 @font-face{
   font-family: Gotham Book;
-  src: url('fonts/GothamBook.ttf');
+  src: url('../fonts/GothamBook.ttf');
 }
 
 @font-face{
   font-family: Gotham Book italic;
-  src: url('fonts/GothamBookItalic.ttf');
+  src: url('../fonts/GothamBookItalic.ttf');
 }
 
 @font-face{
   font-family: Gotham light;
-  src: url('fonts/Gothamlight.ttf');
+  src: url('../fonts/Gothamlight.ttf');
 }
 
 @font-face{
   font-family: Gotham Medium;
-  src: url('fonts/GothamMedium.ttf');
+  src: url('../fonts/GothamMedium.ttf');
 }
 
 

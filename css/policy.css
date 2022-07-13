@@ -1,26 +1,26 @@
 @font-face{
   font-family: Gotham Bold;
-  src: url('fonts/GothamBold.ttf');
+  src: url('../fonts/GothamBold.ttf');
 }
 
 @font-face{
   font-family: Gotham Book;
-  src: url('fonts/GothamBook.ttf');
+  src: url('../fonts/GothamBook.ttf');
 }
 
 @font-face{
   font-family: Gotham Book italic;
-  src: url('fonts/GothamBookItalic.ttf');
+  src: url('../fonts/GothamBookItalic.ttf');
 }
 
 @font-face{
   font-family: Gotham light;
-  src: url('fonts/Gothamlight.ttf');
+  src: url('../fonts/Gothamlight.ttf');
 }
 
 @font-face{
   font-family: Gotham Medium;
-  src: url('fonts/GothamMedium.ttf');
+  src: url('../fonts/GothamMedium.ttf');
 }
 
 
@@ -387,198 +387,128 @@ transition: 0.3s;
 
 
 
-
-
-
-
-
-
-/*..............конец хедера..........*/
-
-
-.img_music_page{
-  width: 100%;
-  position: absolute;
-  height: 100vh;
-  object-fit: cover;
-
+.popup{
+  display: none;
 }
 
-.some{
-  position: absolute;
+.background{
+  position: fixed;
+  z-index: 6;
   height: 100vh;
-  background: #ede7ba;
+  background: #000;
   width: 100%;
   opacity: 0.9;
   height: 100vh;
+  cursor: pointer;
 
-}
-
-.main_title p{
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  
-  margin: auto;
-  
-  
-  font-size: 70px;
-  color: #fff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 input {
-    height: 45px;
-    width: 100%;
-    color: #000;
-    font-size: 14px;
-    line-height: 16px;
-    border: 2px solid #fff;
-    border-radius: 5px;
+  height: 45px;
+  width: 100%;
+  color: #888888;
+  font-size: 14px;
+  line-height: 16px;
+  border: 2px solid #888888;
+  border-radius: 5px;
     padding-left: 25px;
 }
 input:focus {
-    outline: none;
-    border: 2px solid ;
+  outline: none;
+  border: 2px solid ;
 }
 input:valid {
-    border-color: ;
+  border-color: ;
 }
 input:invalid {
-    border-color: orange;
+  border-color: orange;
 }
 input:not(:focus):invalid {
-    border-color: #fff;
-    color: #000;
-}
-
-
-@keyframes fadeCircle {
-    0% {
-        width: 2534px;
-        height: 2534px;
-    }
-    25% {
-        width: 2000px;
-        height: 2000px;
-    }
-    50% {
-        width: 1500px;
-        height: 1500px;
-    }
-    75% {
-        width: 1000px;
-        height: 1000px;
-    }
-    100% {
-        width: 534px;
-        height: 534px;
-    }
+  border-color: #888888;
 }
 .register-form-container {
-    margin: 0 auto;
-    z-index: 5;
-    max-width: 415px;
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 38px;
-    padding-bottom: 38px;
-    animation-name: fadeForm;
-    animation-duration: .7s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.09s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
-}
-@keyframes fadeForm {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: .25;
-    }
-    50% {
-        opacity: .5;
-    }
-    75% {
-        opacity: .75;
-    }
-    100% {
-        opacity: 1;
-    }
+  position: fixed;
+  margin: 0 auto;
+  margin-left: 530px;
+  margin-top: 130px;
+  z-index: 7;
+  max-width: 415px;
+  width: 100%;
+  background: #424242;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  animation-name: fadeForm;
+  animation-duration: .7s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.09s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
+.form-title {
+  color: #FFF;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 38px;
+}
 .form-field {
-
-    margin-bottom: 13px;
-}
-
-.form-title{
-  margin-top: 60px;
-  margin-bottom: 30px;   
-    font-family: Gotham Bold;
-  font-size: 35px;
-  text-align: center;
-  color: #fff;
+  margin-bottom: 13px;
 }
 .button {
-      font-family: Gotham Light;
-    width: 100%;
-    font-weight: bold;
-    font-size: 14px;
-    display:block;
-    height: 45px;
-    background: #b1a55b;
-    border-radius: 5px;
-    color:#fff;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 45px;
-    cursor: pointer;
-    border: none;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  display:block;
+  height: 45px;
+  background: #DBA901;
+  border-radius: 5px;
+  color:#fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  border: none;
 }
 .button:hover {
-    background-color: #DBA901;
+  background-color: #DBA901;
 }
 a.button {
-    text-decoration: none;
+  text-decoration: none;
 }
 .button-google {
-  font-family: Gotham Light;
-    color:#000;
-    background: #fff;
+  color:#C6CFDC;
+  background: #fff;
 }
 .button-google:hover {
-    background: #E2E6F0;
-    color: #000;
+  background: #E2E6F0;
+  color: #888888;
 }
 .divider {
-  font-family: Gotham Light;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #DBA901;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #DBA901;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
- input[type="text"] {
-    background: no-repeat;
-    font-family: Gotham Light;
-    color: #000;
+input[type="text"] {
+  background: #424242;
 }
- input[type="email"] {
-    background: no-repeat;
-    font-family: Gotham Light;
+input[type="email"] {
+  background: #424242;
 }
- input[type="password"] {
-    background: no-repeat;
-    font-family: Gotham Light;
+input[type="password"] {
+  background: #424242;
 }
 
 .sing_up{
@@ -606,82 +536,6 @@ a.button {
   color: #DC1A1A;
   transition: 0.3s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
