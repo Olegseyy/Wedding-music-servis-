@@ -1,0 +1,162 @@
+@font-face{
+  font-family: Gotham Bold;
+  src: url('../fonts/GothamBold.ttf');
+}
+
+@font-face{
+  font-family: Gotham Book;
+  src: url('../fonts/GothamBook.ttf');
+}
+
+@font-face{
+  font-family: Gotham Book italic;
+  src: url('../fonts/GothamBookItalic.ttf');
+}
+
+@font-face{
+  font-family: Gotham light;
+  src: url('../fonts/Gothamlight.ttf');
+}
+
+@font-face{
+  font-family: Gotham Medium;
+  src: url('../fonts/GothamMedium.ttf');
+}
+
+
+html {
+  -webkit-text-size-adjust: none;
+  /* Prevent font scaling in landscape */ }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+img {
+  border-style: none;
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+input, textarea, select {
+  vertical-align: middle;
+  color: #000;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+*:focus {
+  outline: none; }
+
+input::-webkit-input-placeholder {
+  color: #bebebe; }
+
+input:focus::-webkit-input-placeholder {
+  color: #bebebe; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+main{
+ background: #ede7ba;
+ height: 100vh;
+ padding: 41px 10px 0px 10px;
+  z-index: 10;
+}
+
+.img-bg{
+  z-index: 1;
+  left: 0;
+  right: 0;
+  width: 310px;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.failed{
+  text-align: center;
+}
+
+.failed__title-items{
+  font-family: Gotham Bold;
+  font-size: 85px;
+  padding-bottom: 30px;
+  color: #b1a55b;
+}
+
+.sub__title{
+  font-family: Gotham Book italic;
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+
+.some__title{
+width: 100%;  
+  font-family: Gotham light;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.some__title a{  
+  color: #b1a55b;
+}
+
+
+.failed-btn{
+  font-family: Gotham Light;
+  font-weight: 700;
+  padding: 11px 35px ;
+  border-radius: 50px;
+  border: none;
+  margin: auto;
+  font-size: 16px;
+  background: #b1a55b;
+  text-align: center;
+  color:#fff;
+  border:none;
+  cursor: pointer;
+  margin-left: 30px;
+  transition: 0.3s;
+}
+
+.failed-btn:hover{
+  background: #fff;
+  transition: 0.3s;
+  color: #b1a55b;
+  padding: 12px 36px ;
+}
