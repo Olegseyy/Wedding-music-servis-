@@ -16,8 +16,8 @@
 	<header class="header">
 		<div class="container">
 			<div class="header_inner">
-				<a class="item_logo" href="index.html">Erót music</a>
-				<span id="menu_ico" class="material-symbols-outlined">
+				<a class="item_logo" href="index.html">Erót-music</a>
+				<span id="menu_ico" class="material-symbols-outlined lol">
 					menu
 				</span>
 				<nav class="menu navbar navbar-expand-lg">
@@ -50,41 +50,60 @@
 	<section class="responsive_menu" id="dddd">
 		<div class="container">
 			<ul class="responsive_menu_list">
-				<li class="responsive_menu_sing sing_in"><a href="#">Sing in</a></li>
+				<li class="responsive_menu_sing sing_up-link"><a href="#">Sing in</a></li>
 				<li class="responsive_menu_item"><a href="music-page.html">Music</a></li>
-				<li class="responsive_menu_item"><a href="#">About Erót-music</a></li>
-				<li class="responsive_menu_item"><a href="#">Contact Us</a></li>
-				<li class="responsive_menu_item"><a href="#">Privacy policy</a></li>
+				<li class="responsive_menu_item"><a href="About.html">About Erót-music</a></li>
+				<li class="responsive_menu_item"><a href="Contact-us.html">Contact Us</a></li>
+				<li class="responsive_menu_item"><a href="policy.html">Privacy policy</a></li>
 			</ul>
 		</div>
 	</section>
 	<main>
 		<div class="popup">
 			<div class="background"></div>
-			<div class="register-form-container">
-				<form action="">
-					<h1 class="form-title">
-						Sign in
-					</h1>
-					<div class="form-fields">
-						<div class="form-field">
-							<input type="email" placeholder="Email" required>
+			<div class="background__popup">
+				<div class="container">
+					<div class="screen">
+						<div class="screen-header">
+							<div class="screen-header-left">
+								<div class="screen-header-button close"></div>
+								<div class="screen-header-button maximize"></div>
+								<div class="screen-header-button minimize"></div>
+							</div>
+							<div class="screen-header-right">
+								<div class="screen-header-ellipsis"></div>
+								<div class="screen-header-ellipsis"></div>
+								<div class="screen-header-ellipsis"></div>
+							</div>
 						</div>
-						<div class="form-field">
-							<input type="password" placeholder="Password" required minlength="8" maxlength="128">
+						<div class="screen-body">
+							<div class="screen-body-item left">
+								<div class="app-title">
+									<span>Sign </span>
+									<span>in</span>
+								</div>
+								<div class="app-contact">CONTACT INFO : </div>
+							</div>
+							<div class="screen-body-item">
+								<div class="app-form">
+									<div class="app-form-group">
+										<input class="app-form-control" placeholder="EMAIL">
+									</div>
+									<div class="app-form-group">
+										<input class="app-form-control" placeholder="PASSWORD">
+									</div>
+									<div class="app-form-group buttons">
+										<button class="app-form-button">SING IN</button>
+									</div>
+									<div class="sing_up">
+										<p>Don’t have an account?</p>
+										<a href="sing-up-page.html">Sign up</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="form-buttons">
-						<button class="button">Sign in</button>
-
-						<div class="divider">or</div>
-						<a href="#" class="button button-google">Google</a>
-					</div>
-					<div class="sing_up">
-						<p>Don’t have an account?</p>
-						<a href="sing-up-page.html">Sign up</a>
-					</div>
-				</form>
+				</div>
 			</div>
 		</div>
 		<section class="music_section">	
@@ -94,56 +113,8 @@
 			<section class="top_music">
 				<div class="top_music_description">
 					<p>Our top tracks</p>
-				<!-- 	<button class="top_botton">
-						Browse on sale audio
-					</button> -->
 				</div>
 				<div class="top__tracks_item">
-					<div class="music_track">
-						<div class="player">
-							<div class="some">
-								<audio id="av-tag" controls>
-									<source src="music/epic.mp3" type="audio/mp3">
-									</audio>
-									<button class="play-btn">►</button>
-									<input id="cur-time" type="range" min="0" max="10" step="0">
-									<div >
-										<span  id="speaker" class="material-symbols-outlined">
-											volume_up
-										</span>
-									</div>
-									<div class="play-time">4:01</div>
-									<input id="volume" type="range" min="0" max="10">
-								</div>
-								<div class="description">
-									<div class="description_name">
-										<p>Style Energetic Rock</p>
-									</div>
-									<div class="temp">
-										<div class="tepm_bpm">BPM</div>
-										<div class="temp_number">88</div>
-									</div>
-									<div class="description_author">
-										<p>by Erót-music</p>
-									</div>
-								</div>
-								<hr>
-								<div class="description_price">
-									<div class="description_price-item">
-										<div class="prise">
-											<span>$35</span>	
-										</div>
-										<div class="icon">
-											<a href="">
-												<span class="material-symbols-outlined">
-													shopping_cart
-												</span>
-											</a>
-										</div>		
-									</div>
-								</div>		
-							</div>
-						</div>
 					<div class="music_track">
 						<div class="player">
 							<div class="some">
@@ -202,16 +173,16 @@
 												volume_up
 											</span>
 										</div>
-										<div class="play-time">3:44</div>
+										<div class="play-time">4:01</div>
 										<input id="volume" type="range" min="0" max="10">
 									</div>
 									<div class="description">
 										<div class="description_name">
-											<p>Upbeat Joyful Bouncy Energetic Ukulel</p>
+											<p>Style Energetic Rock</p>
 										</div>
 										<div class="temp">
 											<div class="tepm_bpm">BPM</div>
-											<div class="temp_number">120</div>
+											<div class="temp_number">88</div>
 										</div>
 										<div class="description_author">
 											<p>by Erót-music</p>
@@ -221,7 +192,7 @@
 									<div class="description_price">
 										<div class="description_price-item">
 											<div class="prise">
-												<span>$30</span>	
+												<span>$35</span>	
 											</div>
 											<div class="icon">
 												<a href="">
@@ -234,7 +205,6 @@
 									</div>		
 								</div>
 							</div>
-							
 							<div class="music_track">
 								<div class="player">
 									<div class="some">
@@ -248,16 +218,16 @@
 													volume_up
 												</span>
 											</div>
-											<div class="play-time">3:33</div>
+											<div class="play-time">3:44</div>
 											<input id="volume" type="range" min="0" max="10">
 										</div>
 										<div class="description">
 											<div class="description_name">
-												<p>Ambient Technology</p>
+												<p>Upbeat Joyful Bouncy Energetic Ukulel</p>
 											</div>
 											<div class="temp">
 												<div class="tepm_bpm">BPM</div>
-												<div class="temp_number">100</div>
+												<div class="temp_number">120</div>
 											</div>
 											<div class="description_author">
 												<p>by Erót-music</p>
@@ -267,10 +237,7 @@
 										<div class="description_price">
 											<div class="description_price-item">
 												<div class="prise">
-													<span>$21</span>	
-												</div>
-												<div class="new_item">
-													<span>NEW</span>
+													<span>$30</span>	
 												</div>
 												<div class="icon">
 													<a href="">
@@ -285,9 +252,9 @@
 								</div>
 							</div>
 						</section>
-			
+
 				<hr class="hr_some">
-			
+				
 			<div class="music_content">
 				<div class="music_track">
 					<div class="player">
@@ -847,7 +814,6 @@
 								</div>		
 							</div>
 						</div>
-						
 					</div>
 				</div>
 			</div>

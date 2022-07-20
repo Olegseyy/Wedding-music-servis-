@@ -50,42 +50,60 @@
 	<section class="responsive_menu" id="dddd">
 		<div class="container">
 			<ul class="responsive_menu_list">
-				<li class="responsive_menu_sing sing_in"><a href="#">Sing in</a></li>
+				<li class="responsive_menu_sing sing_up-link"><a href="#">Sing in</a></li>
 				<li class="responsive_menu_item"><a href="music-page.html">Music</a></li>
-				<li class="responsive_menu_item"><a href="#">About Erót-music</a></li>
-				<li class="responsive_menu_item"><a href="#">Contact Us</a></li>
-				<li class="responsive_menu_item"><a href="#">Privacy policy</a></li>
+				<li class="responsive_menu_item"><a href="About.html">About Erót-music</a></li>
+				<li class="responsive_menu_item"><a href="Contact-us.html">Contact Us</a></li>
+				<li class="responsive_menu_item"><a href="policy.html">Privacy policy</a></li>
 			</ul>
 		</div>
 	</section>
-	
 	<main>
 		<div class="popup">
 			<div class="background"></div>
-			<div class="register-form-container">
-				<form action="">
-					<h1 class="form-title">
-						Sign in
-					</h1>
-					<div class="form-fields">
-						<div class="form-field">
-							<input type="email" placeholder="Email" required>
+			<div class="background__popup">
+				<div class="container">
+					<div class="screen">
+						<div class="screen-header">
+							<div class="screen-header-left">
+								<div class="screen-header-button close"></div>
+								<div class="screen-header-button maximize"></div>
+								<div class="screen-header-button minimize"></div>
+							</div>
+							<div class="screen-header-right">
+								<div class="screen-header-ellipsis"></div>
+								<div class="screen-header-ellipsis"></div>
+								<div class="screen-header-ellipsis"></div>
+							</div>
 						</div>
-						<div class="form-field">
-							<input type="password" placeholder="Password" required minlength="8" maxlength="128">
+						<div class="screen-body">
+							<div class="screen-body-item left">
+								<div class="app-title">
+									<span>Sign </span>
+									<span>in</span>
+								</div>
+								<div class="app-contact">CONTACT INFO : </div>
+							</div>
+							<div class="screen-body-item">
+								<div class="app-form">
+									<div class="app-form-group">
+										<input class="app-form-control" placeholder="EMAIL">
+									</div>
+									<div class="app-form-group">
+										<input class="app-form-control" placeholder="PASSWORD">
+									</div>
+									<div class="app-form-group buttons">
+										<button class="app-form-button">SING IN</button>
+									</div>
+									<div class="sing_up">
+										<p>Don’t have an account?</p>
+										<a href="sing-up-page.html">Sign up</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="form-buttons">
-						<button class="button">Sign in</button>
-
-						<div class="divider">or</div>
-						<a href="#" class="button button-google">Google</a>
-					</div>
-					<div class="sing_up">
-						<p>Don’t have an account?</p>
-						<a href="sing-up-page.html">Sign up</a>
-					</div>
-				</form>
+				</div>
 			</div>
 		</div>
 		<section class="prise">
@@ -108,7 +126,7 @@
 							<div class="interval">
 								/month
 							</div>
-							<button class="select__btn">SELECT</button>
+							<a href="#"><button class="select__btn">SELECT</button></a>
 						</div>
 					</div>
 					
@@ -130,7 +148,7 @@
 								/month
 							</div>
 						</div>
-						<button class="select__btn">SELECT</button>
+						<a href="#"><button class="select__btn">SELECT</button></a>
 					</div>
 
 					<div class="prise__items-third">
@@ -145,7 +163,7 @@
 								contact_mail
 							</span>
 						</div>
-						<button class="select__btn">CONTACT US</button>
+						<a href="Contact-us.html"><button class="select__btn">CONTACT US</button></a>
 					</div>
 				</div>
 			</div>
