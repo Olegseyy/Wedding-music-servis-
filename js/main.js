@@ -114,19 +114,6 @@
 
 
 
-$('.sing_up-link').click(function(e) {
-  e.preventDefault();
-  $('.popup').fadeIn(100);
-  $('html').addClass('no-scroll');
-});
-
-$('.background').click(function() {
-  $('.popup').fadeOut(100);
-  $('html').removeClass('no-scroll');
-});
-
-
-
 var opened = false;
 $(".lol").click(function(){
   opened = !opened;
