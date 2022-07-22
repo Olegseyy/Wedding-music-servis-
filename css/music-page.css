@@ -146,9 +146,14 @@ font-family: Gotham Bold;
 .menu_list_second{
   display: flex;
   align-items: center;
-  width: 259px;
+  width: 281px;
   margin-left: 10%;
 
+}
+
+.shopping_cart_checkout{
+  cursor: pointer;
+ color: #ebe3ab;
 }
 
 .menu_list-link {
@@ -239,10 +244,10 @@ transition: 0.3s;
 }
 
 .pricing_list-item:hover{
-  background: #b1a55b;
+  background: #ebe3ab;
   transition: 0.3s;
   color: #fff;
-  padding: 7px 37px ;
+  
 }
 
 .sing_in{
@@ -271,6 +276,7 @@ transition: 0.3s;
 }
 
 .sing_up-link{
+  margin-bottom: 50px;
   width: 100px;
   font-family: Gotham light;
   font-weight: 300;
@@ -333,36 +339,64 @@ transition: 0.3s;
     'wght' 500,
     'GRAD' 0,
     'opsz' 48
+  }
+  .pricing_list-btn button{
+    font-family: Gotham Light;
+    padding: 7px 35px ;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    background: #b1a55b;
+    text-align: center;
+    color:#fff;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0;
+  }
 
+  .shopping_cart_checkout{
+    font-size: 30px;
+    color: #fff;
+    margin-left: 14px;
+    
   }
   
   .responsive_menu_list{
+    text-align: center;
     margin-top: 11%;
   }
 
+
   .responsive_menu_sing a{
-    font-family: 'Roboto', sans-serif;
-    font-weight:bold;
+    text-align: center;
+    font-family: Gotham Bold;
     color: #fff;
     font-size: 26px;
-    margin-bottom: 10px
-  }
-  .responsive_menu_sing {
     margin-bottom: 20px
   }
 
+  .responsive_menu_sing {
+  }
+
   .responsive_menu_item{
-    margin-top: 7px
+    margin-top: 12px
   }
 
   .responsive_menu_item a{
-      font-family: Gotham light;
-
+    margin-bottom: 20px;
+    font-family: Gotham light;
     color: #fff;
     font-size: 20px;
   }
   .header_inner{
     height:10vh;
+  }
+  .some__btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
   }
  
 } 
@@ -390,6 +424,16 @@ transition: 0.3s;
 }
 
 
+/*@media (min-width: 320px) and (max-width: 768px){
+ .pricing_list-item{
+    padding: 7px 35px;
+    margin-top: 30px !important;
+
+ }
+ .shopping_cart_checkout{
+  font-size: 20px;
+ }
+}*/
 
 
 

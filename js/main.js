@@ -124,6 +124,8 @@ $(".lol").click(function(){
 }
 });
 
+
+
 // WaveSurfer.create({
 //   container: document.getElementById("av-tag"),
 //   barWidth: 2,
